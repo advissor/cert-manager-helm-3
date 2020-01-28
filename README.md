@@ -10,7 +10,9 @@
 5. Install the cert-manager Helm chart
 
 # Steps 
-    ```kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/v0.13.0/deploy/manifests/00-crds.yaml
+
+```
+    kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/v0.13.0/deploy/manifests/00-crds.yaml
 
     kubectl create namespace cert-manager
 
@@ -20,6 +22,7 @@
 
     helm install cert-manager jetstack/cert-manager --namespace cert-manager
 ```
+
 # Official guide
 There is a typo in docs, in the last step, for this purpose I've created this repo
 
